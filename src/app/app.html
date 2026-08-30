@@ -1,0 +1,246 @@
+<div class="site-shell">
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio" (click)="closeMenu()">
+      <span>LASL</span><i></i>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Abrir navegación"
+      [attr.aria-expanded]="menuOpen()"
+      (click)="toggleMenu()"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navigation" [class.open]="menuOpen()" aria-label="Navegación principal">
+      <a href="#perfil" (click)="closeMenu()"><small>01</small> Perfil</a>
+      <a href="#especialidad" (click)="closeMenu()"><small>02</small> Especialidad</a>
+      <a href="#experiencia" (click)="closeMenu()"><small>03</small> Experiencia</a>
+      <a href="#contacto" (click)="closeMenu()"><small>04</small> Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div #scene class="scene"></div>
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> Software engineer · 21 años</div>
+        <h1>
+          <span>Luis Angel</span>
+          <span>Siroma Lozano</span>
+        </h1>
+        <div class="hero-bottom">
+          <p>
+            Desarrollo sistemas que convierten procesos complejos en soluciones automáticas,
+            conectadas y fáciles de usar.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#especialidad">Explorar mi trabajo <span>↘</span></a>
+            <a class="text-link" href="https://github.com/proTests-x" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-index" aria-hidden="true">PY / GO / NG / API</div>
+      <a class="scroll-cue" href="#perfil" aria-label="Ir a la sección de perfil">
+        <span></span>
+        Scroll
+      </a>
+    </section>
+
+    <div class="ticker" aria-label="Tecnologías principales">
+      <div>
+        <span>Python</span><i>✦</i><span>Go</span><i>✦</i><span>Angular</span><i>✦</i><span>Scraping</span><i>✦</i>
+        <span>Automatización</span><i>✦</i><span>APIs</span><i>✦</i><span>Microfrontends</span><i>✦</i>
+        <span>Python</span><i>✦</i><span>Go</span><i>✦</i><span>Angular</span><i>✦</i><span>Scraping</span><i>✦</i>
+        <span>Automatización</span><i>✦</i><span>APIs</span><i>✦</i><span>Microfrontends</span><i>✦</i>
+      </div>
+    </div>
+
+    <section class="profile section" id="perfil">
+      <div class="section-heading reveal">
+        <span>01 / Perfil</span>
+        <p>Backend sólido. Frontend modular. Automatización que ahorra tiempo.</p>
+      </div>
+
+      <div class="profile-grid">
+        <p class="profile-statement reveal">
+          Creo productos digitales desde el dato hasta la interfaz, con especial atención en
+          <em>scraping</em>, automatización y arquitecturas que conectan múltiples servicios.
+        </p>
+
+        <div class="profile-copy reveal">
+          <p>
+            Soy desarrollador especializado en Python, Go y Angular. Diseño APIs, soluciones de
+            extracción de datos y experiencias web mantenibles que pueden crecer sin perder claridad.
+          </p>
+          <p>
+            Mi enfoque combina precisión técnica, estructuras modulares y una obsesión práctica:
+            eliminar trabajo repetitivo mediante software confiable.
+          </p>
+        </div>
+      </div>
+
+      <div class="metrics reveal">
+        <article>
+          <strong>4<span>+</span></strong>
+          <p>Años trabajando con Python</p>
+        </article>
+        <article>
+          <strong>3<span>+</span></strong>
+          <p>Años creando productos con Angular</p>
+        </article>
+        <article>
+          <strong>360<span>°</span></strong>
+          <p>Del servidor a la experiencia final</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="expertise section" id="especialidad">
+      <div class="section-heading reveal">
+        <span>02 / Especialidad</span>
+        <p>Soluciones pensadas para integrarse, escalar y permanecer claras.</p>
+      </div>
+
+      <div class="expertise-list">
+        <article class="expertise-card reveal">
+          <div class="card-number">01</div>
+          <div class="card-title">
+            <span>Data systems</span>
+            <h2>Scraping &<br />automatización</h2>
+          </div>
+          <p>
+            Flujos que extraen, procesan y organizan información de la web, además de automatizar
+            tareas en sitios y aplicaciones con procesos resistentes y medibles.
+          </p>
+          <div class="tags"><span>Python</span><span>Web scraping</span><span>Bots</span></div>
+        </article>
+
+        <article class="expertise-card reveal">
+          <div class="card-number">02</div>
+          <div class="card-title">
+            <span>Connected backend</span>
+            <h2>APIs &<br />servicios</h2>
+          </div>
+          <p>
+            APIs y capas de integración que coordinan servicios alojados en distintos servidores,
+            entregando una sola experiencia coherente, segura y fácil de consumir.
+          </p>
+          <div class="tags"><span>Go</span><span>REST</span><span>Integraciones</span><span>Arquitectura</span></div>
+        </article>
+
+        <article class="expertise-card reveal">
+          <div class="card-number">03</div>
+          <div class="card-title">
+            <span>Modular frontend</span>
+            <h2>Angular &<br />microfrontends</h2>
+          </div>
+          <p>
+            Interfaces modernas y responsive divididas en módulos independientes, preparadas para
+            equipos, productos y ciclos de entrega que necesitan avanzar a distinta velocidad.
+          </p>
+          <div class="tags"><span>Angular</span><span>TypeScript</span><span>Responsive</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="stack section">
+      <div class="stack-intro reveal">
+        <span class="mini-label">Herramientas principales</span>
+        <h2>Tres tecnologías. Una solución completa.</h2>
+      </div>
+
+      <div class="stack-grid">
+        <article class="stack-card reveal">
+          <div class="stack-top"><span>PY</span><small>4+ años</small></div>
+          <h3>Python</h3>
+          <p>Automatización, scraping, lógica de negocio, procesamiento de datos y construcción de APIs.</p>
+          <div class="progress"><i></i></div>
+        </article>
+        <article class="stack-card light reveal">
+          <div class="stack-top"><span>NG</span><small>3+ años</small></div>
+          <h3>Angular</h3>
+          <p>Aplicaciones web, componentes reutilizables, microfrontends y experiencias responsive.</p>
+          <div class="progress"><i></i></div>
+        </article>
+        <article class="stack-card go reveal">
+          <div class="stack-top"><span>GO</span><small>Backend</small></div>
+          <h3>Golang</h3>
+          <p>Servicios backend, mantenimiento de endpoints, lógica interna e integraciones eficientes.</p>
+          <div class="progress"><i></i></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience section" id="experiencia">
+      <div class="section-heading reveal">
+        <span>03 / Experiencia</span>
+        <p>Experiencia real construyendo software con foco en resultados.</p>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-period">
+          <span>2025</span>
+          <i></i>
+          <span>Ene — Oct</span>
+        </div>
+        <article>
+          <div class="role-meta">
+            <span>Enero 2025 — Octubre 2025</span>
+            <span>Backend developer · Frontend</span>
+          </div>
+          <h2>GDP Estudios</h2>
+          <div class="role-details">
+            <p>
+              <span>Backend</span>
+              Trabajé principalmente con Go, modificando endpoints y funciones internas para ampliar
+              y mantener las capacidades de sus servicios.
+            </p>
+            <p>
+              <span>Frontend</span>
+              Ayudé a migrar el proyecto desde una versión antigua de Angular hacia la versión más
+              reciente disponible en ese periodo, abriendo nuevas posibilidades técnicas y formas de trabajo.
+            </p>
+          </div>
+          <div class="tags"><span>Go</span><span>APIs</span><span>Angular</span><span>Migración</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="principles section">
+      <div class="principles-title reveal">
+        <span class="mini-label">Cómo trabajo</span>
+        <h2>Menos fricción.<br />Más sistema.</h2>
+      </div>
+      <div class="principles-list">
+        <article class="reveal"><span>01</span><h3>Entender</h3><p>Mapeo el proceso, los datos y las dependencias antes de construir.</p></article>
+        <article class="reveal"><span>02</span><h3>Conectar</h3><p>Diseño piezas independientes que se comunican de forma clara.</p></article>
+        <article class="reveal"><span>03</span><h3>Automatizar</h3><p>Transformo tareas repetitivas en flujos confiables y observables.</p></article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div class="contact-orbit" aria-hidden="true"><span></span></div>
+      <span class="mini-label reveal">04 / Contacto</span>
+      <div class="contact-content reveal">
+        <p>¿Tienes un proceso por automatizar o un producto por construir?</p>
+        <h2>Hagámoslo<br />funcionar.</h2>
+        <a href="https://github.com/proTests-x" target="_blank" rel="noreferrer">
+          <span>Ver GitHub</span><i>↗</i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Luis Angel Siroma Lozano</span>
+    <span>Python · Go · Angular · Automation</span>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+</div>
